@@ -1,0 +1,10 @@
+> library(Rcpp)
+> dyn.load('Mden_i_derv_cpp.so')
+> i=c(1,2,3)
+> j=c(1,2,3)
+> length_ni=c(1,2,3)
+> dat=c(1,2,3)
+> x=c(1,4,5)
+> zz=c(2,1,1)
+> .Call('Mden_i_derv_cpp',i,j,length_ni,dat,x,zz)
+[1] 11 
